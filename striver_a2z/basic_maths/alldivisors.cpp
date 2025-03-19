@@ -3,7 +3,7 @@ using namespace std;
 
 void printDivisors(int &n){
     set<int> nums;
-    for(int i=1;i<=sqrt(n);i++){
+    for(int i=1;i*i<=n;i++){
         if(n%i == 0){
             nums.emplace(i);
             nums.emplace(n/i);
